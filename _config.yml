@@ -9,7 +9,7 @@
 title: Vlad Kap
 email: vkapitoshka@gmail.com
 description:  Пробная версия Блога по Администрированию и програмированию
-baseurl: "/VVK"
+baseurl: ""
 #baseurl: "/jekyll-wing-template"
 url: "http://VVK.com" # the base hostname & protocol for your site
 twitter_username: vkapitoshka
