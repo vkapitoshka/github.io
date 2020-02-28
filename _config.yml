@@ -1,19 +1,10 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+title : Wall-E
+description: 'Блог по системному администрированию'
 
-# Site settings
-title: Vlad Kap
-email: vkapitoshka@gmail.com
-description:  Пробная версия Блога по Администрированию и програмированию
-baseurl: ""
-#baseurl: "/jekyll-wing-template"
-url: "http://VVK.com" # the base hostname & protocol for your site
-twitter_username: vkapitoshka
-github_username:  vkapitoshka
-
-# Build settings
 markdown: kramdown
+highlighter: rouge
+logo: false
+paginate: 15
+baseurl: ""
+plugins: [jekyll-gist]
+permalink: /:year/:month/:title.html

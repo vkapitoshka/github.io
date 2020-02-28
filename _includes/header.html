@@ -1,15 +1,46 @@
-<header class="site-header">
+<div class="header-wrapper">
+    <header>
+        <!-- logo and description -->
+        {% if page.layout != "post" %}
+        <div class="head-area">
+            <h1 class="site-logo">
+                <a href="/"><img src="/assets/img/logo.png" class="logo"/></a>
+            </h1>
+            <h3 class="site-description">{{ site.description }}</h3>
+        </div>
+        {% endif %}
+        <nav class="site-nav">
+            <div class="left-nav">
+                <!-- add titles to all buttons -->
+                <div class="ui secondary menu inverted">
+                    <a class="item" href="/">
+                        Домой
+                    </a>
+                    <a class="item" href="/about.html">
+                        About
+                    </a>
+                    <a class="item" href="/archive.html">
+                        Архив
+                    </a>
+                    <div class="right menu">
+                        <div id="head-search" class="ui category search item">
+                            <div class="ui transparent icon input">
+                                <input placeholder="Поиск..." type="text" id="search-input" onkeypress="handleKeyPress()">
+                                <i class="search link icon" onclick="handleSubmit()"></i>
+                            </div>
+                        </div>
 
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-    
-  </div>
-
-  <div class="header-badge">
-    <a href="{{ site.baseurl }}/">
-        <img src="/assets/headshot.jpg" />
-    </a>
-  </div>
-    
-</header>
+                        <a class="item" href="https://www.facebook.com/vlad.kap.73">
+                            <i class="facebook link icon"></i>
+                        </a>
+                        <a class="item" href="https://github.com/vkapitoshka">
+                            <i class="github link icon"></i>
+                        </a>
+                        <a class="item" href="/feed.xml">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-nav"></div>
+        </nav>
+    </header>
+</div>

@@ -1,0 +1,182 @@
+I"N <p>Ниже, все чтобы стилизировать тему.</p>
+<h2 id="параграфы">Параграфы</h2>
+
+<h1 id="heading-1">Heading 1</h1>
+
+<h2 id="heading-2">Heading 2</h2>
+
+<h3 id="heading-3">Heading 3</h3>
+
+<h4 id="heading-4">Heading 4</h4>
+
+<h5 id="heading-5">Heading 5</h5>
+
+<h6 id="heading-6">Heading 6</h6>
+
+<h3 id="код-в-файле">Код в файле</h3>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Heading 1</span>
+
+<span class="c1">## Heading 2</span>
+
+<span class="c1">### Heading 3</span>
+
+<span class="c1">#### Heading 4</span>
+
+<span class="c1">##### Heading 5</span>
+
+<span class="c1">###### Heading 6</span>
+
+</code></pre></div></div>
+
+<h2 id="текс-тела-сайта">Текс тела сайта</h2>
+
+<p>Выделение текста <strong>Жирный текст</strong></p>
+<h3 id="код-в-файле-1">Код в файле</h3>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Выделение текста **Жирный текст**</span>
+</code></pre></div></div>
+<h3 id="кариинка">Кариинка</h3>
+<p class="image-right"><img src="/assets/img/demon.JPG" alt="Картинка" /></p>
+
+<h3 id="код-в-файле-2">Код в файле</h3>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">![</span><span class="s">Картинка](/assets/img/demon.JPG)</span>
+<span class="pi">{:</span> <span class="nv">.image-right</span><span class="pi">}</span>
+</code></pre></div></div>
+<p><em>Запись курсивом</em> Например напишем формулу воды H<sub>2</sub>O либо добавление курсива так <cite>(Курсив)</cite>, нижнее подчеркивание: <u>Подчеркивание</u></p>
+
+<h3 id="код-в-файле-3">Код в файле</h3>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">*</span><span class="s">Запись курсивом* Например напишем формулу воды H&lt;sub&gt;2&lt;/sub&gt;O либо добавление курсива так &lt;cite&gt;(Курсив)&lt;/cite&gt;, нижнее подчеркивание</span><span class="pi">:</span> <span class="s">&lt;u&gt;Подчеркивание&lt;/u&gt;</span>
+</code></pre></div></div>
+<p>Выделение текста стилем из CSS <abbr title="cascading stylesheets">CSS</abbr></p>
+
+<h3 id="код-в-файле-4">Код в файле</h3>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Выделение текста стилем из CSS &lt;abbr title="cascading stylesheets"&gt;CSS&lt;/abbr&gt;</span>
+</code></pre></div></div>
+<h3 id="абзац">Абзац</h3>
+<blockquote>
+  <p>Это новый абзац</p>
+</blockquote>
+
+<h3 id="код-в-файле-5">Код в файле</h3>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">&gt;</span> <span class="err">Это</span> <span class="err">новый</span> <span class="err">абзац</span>
+</code></pre></div></div>
+<h2 id="различные-типы-записи">Различные типы записи</h2>
+
+<h3 id="нумерованные-пункты">Нумерованные пункты</h3>
+
+<ol>
+  <li>Пункт 1
+    <ol>
+      <li>Подпункт 1</li>
+      <li>Подпункт 2</li>
+      <li>Подпункт 3</li>
+    </ol>
+  </li>
+  <li>Пункт 2</li>
+</ol>
+
+<h3 id="код-в-файле-6">Код в файле</h3>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">1. Пункт </span><span class="m">1</span>
+    <span class="s">1. Подпункт </span><span class="m">1</span>
+    <span class="s">2. Подпункт </span><span class="m">2</span>
+    <span class="s">3. Подпункт </span><span class="m">3</span>
+<span class="s">2. Пункт </span><span class="m">2</span>
+</code></pre></div></div>
+<h3 id="ненумерованные-пункты">Ненумерованные пункты</h3>
+
+<ul>
+  <li>Item one</li>
+  <li>Item two</li>
+  <li>Item three</li>
+</ul>
+
+<h3 id="код-в-файле-7">Код в файле</h3>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">*</span> <span class="s">Item one</span>
+<span class="err">*</span> <span class="s">Item two</span>
+<span class="err">*</span> <span class="s">Item three</span>
+</code></pre></div></div>
+<h2 id="таблица">Таблица</h2>
+
+<table rules="groups">
+  <thead>
+    <tr>
+      <th style="text-align: left">Заголовок1</th>
+      <th style="text-align: center">Заголовок2</th>
+      <th style="text-align: right">Заголовок3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">ячейка1</td>
+      <td style="text-align: center">ячейка2</td>
+      <td style="text-align: right">ячейка3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ячейка4</td>
+      <td style="text-align: center">ячейка5</td>
+      <td style="text-align: right">ячейка6</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">ячейка1</td>
+      <td style="text-align: center">ячейка2</td>
+      <td style="text-align: right">ячейка3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ячейка4</td>
+      <td style="text-align: center">ячейка5</td>
+      <td style="text-align: right">ячейка6</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td style="text-align: left">Низ1</td>
+      <td style="text-align: center">Низ2</td>
+      <td style="text-align: right">Низ3</td>
+    </tr>
+  </tfoot>
+</table>
+
+<h3 id="код-в-файле-8">Код в файле</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Заголовок1 | Заголовок2 | Заголовок3 |
+|:-----------|:----------:|----------:|
+| ячейка1    | ячейка2   | ячейка3   |
+| ячейка4   | ячейка5   | ячейка6   |
+|----
+| ячейка1   | ячейка2   | ячейка3   |
+| ячейка4   | ячейка5   | ячейка6   |
+|=====
+| Низ1   | Низ2   | Низ3
+{: rules="groups"}
+</code></pre></div></div>
+<h2 id="code-snippets">Code Snippets</h2>
+
+<p>Syntax highlighting via Rouge</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">#container</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">-240px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Non Pygments code example</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div id="awesome"&gt;
+    &lt;p&gt;This is great isn't it?&lt;/p&gt;
+&lt;/div&gt;
+</code></pre></div></div>
+
+<h2 id="buttons">Buttons</h2>
+
+<p>Make any link standout more when applying the <code class="highlighter-rouge">.btn</code> class.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">class=</span><span class="s">"ui positive button"</span><span class="nt">&gt;</span>Success Button<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p><a href="/" class="ui primary button">Primary Button</a>
+<a href="/" class="ui secondary button">Secondary Button</a>
+<a href="/" class="ui positive button">Positive Button</a>
+<a href="/" class="ui negative button">Negative Button</a></p>
+:ET

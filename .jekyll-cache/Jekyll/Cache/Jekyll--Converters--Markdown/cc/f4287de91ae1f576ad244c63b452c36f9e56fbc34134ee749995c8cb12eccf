@@ -1,0 +1,46 @@
+I"�<p>Ниже, все чтобы стилизировать тему.</p>
+<h2 id="параграфы">Параграфы</h2>
+
+<h1 id="heading-1">Heading 1</h1>
+
+<h2 id="heading-2">Heading 2</h2>
+
+<h3 id="heading-3">Heading 3</h3>
+
+<h4 id="heading-4">Heading 4</h4>
+
+<h5 id="heading-5">Heading 5</h5>
+
+<h6 id="heading-6">Heading 6</h6>
+
+<h3 id="код-в-файле">Код в файле</h3>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Heading 1</span>
+
+<span class="c1">## Heading 2</span>
+
+<span class="c1">### Heading 3</span>
+
+<span class="c1">#### Heading 4</span>
+
+<span class="c1">##### Heading 5</span>
+
+<span class="c1">###### Heading 6</span>
+
+</code></pre></div></div>
+
+<h3 id="текс-тела-сайта">Текс тела сайта</h3>
+
+<p>Выделение текста <strong>Жирный текст</strong></p>
+<h3 id="код-в-файле-1">Код в файле</h3>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Выделение текста **Жирный текст**</span>
+</code></pre></div></div>
+<h2 id="кариинка">Кариинка</h2>
+<p class="image-right"><img src="/assets/img/demon.JPG" alt="Картинка" /></p>
+
+<h3 id="код-в-файле-2">Код в файле</h3>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">![</span><span class="s">Картинка](/assets/img/demon.JPG)</span>
+<span class="pi">{:</span> <span class="nv">.image-right</span><span class="pi">}</span>
+</code></pre></div></div>
+<p><em>Запись курсивом</em> Например напишем формулу воды H<sub>2</sub>O либо добавление курсива так <cite>(Курсив)</cite>, нижнее подчеркивание: <u>Подчеркивание</u></p>
+:ET
