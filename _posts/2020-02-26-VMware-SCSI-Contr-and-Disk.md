@@ -59,8 +59,9 @@ tags: [VMware]
 
 Как не странно, но оказалось, что VMWare монтирует виртуальные **SCSI** адаптеры всегда под одним и тем же номером порта для кажной виртуальной машины и зная это достаточно легко определить SCSI контроллер. Для 0 и 1 SCSI контроллера монтирование происходит под **PCI Slot 160** и **PCI Slot 256** соответсвенно.
 Кстати эти же порты можно увидеть через PowerCLI командой: 
-
-**get-vm test | Get-ScsiController | select Parent, @{N='SlotNumber';E={$_.ExtensionData.SlotInfo.PciSlotNumber}}**
+```yaml
+get-vm test | Get-ScsiController | select Parent, @{N='SlotNumber';E={$_.ExtensionData.SlotInfo.PciSlotNumber}}
+```
 
 А вот для **SCSI** адаптеров 2 и 3 значения отличаются, но одинаковы для всех виртуальных машин, соответсвенно **PCI Slot 161** и **PCI Slot 193**
 
