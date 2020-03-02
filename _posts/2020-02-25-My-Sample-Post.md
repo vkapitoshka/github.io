@@ -45,7 +45,7 @@ tags: [sample post]
 ```yaml
 Выделение текста **Жирный текст**
 ```
-### Кариинка
+### Картинка
 ![Картинка]({{ sute.url }}/assets/img/demon.JPG)
 {: .image-right}
 
@@ -161,7 +161,7 @@ Syntax highlighting via Rouge
 <a href="/" class="ui positive button">Success Button</a>
 ```
 
-<a href="/" class="ui primary button">Primary Button</a>
+<a href="/" class="ui primary button"></a>
 <a href="/" class="ui secondary button">Secondary Button</a>
 <a href="/" class="ui positive button">Positive Button</a>
 <a href="/" class="ui negative button">Negative Button</a>
