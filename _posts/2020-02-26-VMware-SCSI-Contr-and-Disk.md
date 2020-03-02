@@ -22,7 +22,7 @@ tags: [VMware]
 ![Картинка]({{ sute.url }}/assets/img/demon.JPG)
 {: .image-right}
 
-![vm_Disk]({{ sute.url }}/assets/img/images/vmDisk.JPG)
+![vm_Disk]({{ sute.url }}/assets/img/images/vmDisk.png)
 {: .image-right}
 Максимальнок количество дисков для одного SCSI контролера равно 16.
 
