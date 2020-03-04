@@ -2,7 +2,7 @@
 layout: post
 title: Соответствие дисков VMware и дисков в ОС Windows
 description: "Использование различных тегов в поста но через jekyll"
-modified: 2020-03-02
+modified: 2020-03-04
 tags: [VMware]
 ---
 > На момент написание данной статьи используется VMware 6.5
@@ -19,7 +19,7 @@ tags: [VMware]
 На уровне виртуализации при подключении диска к одному и тому же **SCSI** контроллеру каждому диск выдается порядковый номер. Таким образом каждый диск имеет свой идентификатор он состоит из
 номера SCSI контроллера,нумирация идет с 0, и номера под которым подключен диск. По умолчанию <u>первый диск</u> имеет адрес **0:0**, <u>второй</u> **0:1** и т.д.
 
-![vm_Disk]({{ sute.url }}/assets/images/vm_Disk.png)
+![vm_Disk]({{ sute.url }}/assets/images/vm_Disk.jpg)
 {: .image-right}
 Максимальнок количество дисков для одного SCSI контроллера равно 16.
 
@@ -31,18 +31,18 @@ tags: [VMware]
 2. Выполняем команду **DISKPART** - в консоли вы перейдете в командную оболочку diskpart
 3. Выполняем команду *list disk*, которая отобразит нам все диски подключенные к виртуальной машине
 
-    ![List_Disks]({{ sute.url }}/assets/images/list_d.png)
+    ![List_Disks]({{ sute.url }}/assets/images/list_d.jpg)
     {: .image-right}
 
 4. Выбираем один из дисков, для которого нам требуется определить его номер. Это делается командой *selest disk (0,1,2,3 и т.д.)*
 
-    ![Select_Disks]({{ sute.url }}/assets/images/select_d.png)
+    ![Select_Disks]({{ sute.url }}/assets/images/select_d.jpg)
     {: .image-right}
 
 5. После того как нужный диск выбран, выполняем команду *detail disk*, чтобы посмотреть детали диска
 6. В эти деталях нужно обратить внимание для пункт **Target** - это и есть вторая цифра в адресе диска в формате **0:0**, **0:1**...**0:15**
 
-    ![Detail_Disks]({{ sute.url }}/assets/images/detail_d.png)
+    ![Detail_Disks]({{ sute.url }}/assets/images/detail_d.jpg)
     {: .image-center}
 
 7. Остается только перепроверить соответствие номеров в консоли **VMware** и в консоли **DISKPART** и выполнить стандартную процедуру увеличения диска описанную выше
@@ -53,7 +53,7 @@ tags: [VMware]
 
 |SCSI 2 | SCSI 3 |
 |:------:|:------:|
-| ![Detail_Disks]({{ sute.url }}/assets/images/detail_d1.png) | ![Detail_Disks]({{ sute.url }}/assets/images/detail_d2.png)
+| ![Detail_Disks]({{ sute.url }}/assets/images/detail_d1.jpg) | ![Detail_Disks]({{ sute.url }}/assets/images/detail_d2.jpg)
 
 > На картинке видно, что у данных дисков различный путь *Local Path*, но найти данный параметр в свойствах сетевого адаптера мне не удалось.
 
@@ -67,7 +67,7 @@ get-vm test | Get-ScsiController | select Parent, @{N='SlotNumber';E={$_.Extensi
 
 | SCSI 0 | SCSI 1 | SCSI 2 | SCSI 3 |
 |:------:|:------:|:------:|:------:|
-| ![Detail_Disks]({{ sute.url }}/assets/images/SCSI_0.png) | ![Detail_Disks]({{ sute.url }}/assets/images/SCSI_1.png) |![Detail_Disks]({{ sute.url }}/assets/images/SCSI_2.png) | ![Detail_Disks]({{ sute.url }}/assets/images/SCSI_3.png)
+| ![Detail_Disks]({{ sute.url }}/assets/images/SCSI_0.jpg) | ![Detail_Disks]({{ sute.url }}/assets/images/SCSI_1.jpg) |![Detail_Disks]({{ sute.url }}/assets/images/SCSI_2.jpg) | ![Detail_Disks]({{ sute.url }}/assets/images/SCSI_3.jpg)
 
 Для удобства составил таблицу:
 

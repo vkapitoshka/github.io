@@ -23,13 +23,27 @@
                         Архив
                     </a>
                     <div class="right menu">
-                        <div id="head-search" class="ui category search item">
+                        <div id="js-super-search" class="ui category search item">
+                            <div class="ui transparent icon input">
+                                <a href="javascript:void(0)" onclick="window.location.reload()" class="super-search__close-btn">X</a>
+                                <input placeholder="Поиск..." type="text" id="js-super-search__input">
+                                <ul class="super-search__results" id="js-super-search__results"></ul>
+                            </div>
+                        </div>
+                        <!-- <div id="head-search" class="ui category search item">
                             <div class="ui transparent icon input">
                                 <input placeholder="Поиск..." type="text" id="search-input" onkeypress="handleKeyPress()">
                                 <i class="search link icon" onclick="handleSubmit()"></i>
                             </div>
-                        </div>
-
+                        </div> -->
+                        <!-- <div id="head-search" class="ui category search item">
+                            <div class="ui transparent icon input">
+                                <a href="javascript:void(0)" onclick="superSearch.toggle()" class="super-search__close-btn">X</a>
+                                <input placeholder="Поиск..." type="text" id="js-super-search__input">
+                                <ul class="super-search__results" id="js-super-search__results"></ul>
+                            </div>
+                        </div> -->
+                        
                         <a class="item" href="https://www.facebook.com/vlad.kap.73">
                             <i class="facebook link icon"></i>
                         </a>
