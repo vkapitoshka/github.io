@@ -3,6 +3,7 @@ layout: post
 title: Соответствие дисков VMware и дисков в ОС Windows
 description: "Использование различных тегов в поста но через jekyll"
 modified: 2020-03-04
+author: Vlad Kap
 tags: [VMware]
 ---
 > На момент написание данной статьи используется VMware 6.5

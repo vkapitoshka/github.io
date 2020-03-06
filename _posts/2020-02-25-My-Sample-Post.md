@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Использования Jekyll тегов
-description: "Использование различных тегов в поста но через jekyll"
+title: Использования Markdown стилей в Jekyll
+description: "Использование Markdown cтилей в постах jekyll"
 modified: 2020-02-27
+author: Vlad Kap
 tags: [sample post]
 ---
 
